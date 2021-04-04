@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-17</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container-fluid"><br>
+    <h1 class="text-center text-success">Object Handling!</h1>
+    <div class="row">
+        <div class="col-lg-6">
+            <h3>Write a JavaScript program to list the properties of a JavaScript object</h3>
+            <p class="text-success font-weight-bold" id="program1Output"></p>
+            <input type="text" class="form-control" id="program1InputPro" placeholder="Enter Object Properties"><br>
+            <input type="text" class="form-control" id="program1InputVal" placeholder="Enter Object Values"><br>
+            <button class="btn btn-primary" onclick="getProperties()">List</button>
+        </div> 
+        <div class="col-lg-6">
+            <h3> Write a JavaScript program to delete the rollno property.</h3>
+            <p class="text-success font-weight-bold" id="program2Output"></p>
+            <input type="text" class="form-control" id="program2InputPro" placeholder="Enter Object Properties"><br>
+            <input type="text" class="form-control" id="program2InputVal" placeholder="Enter Object Values"><br>
+            <input type="text" class="form-control" id="program2IDelPro" placeholder="Enter Property Which you want to delete from Object"><br>
+            <button class="btn btn-primary" onclick="deleteProperty()">Delete</button>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-lg-6">
+            <h3>Write a JavaScript program to get the length of a JavaScript object</h3>
+            <p class="text-success font-weight-bold" id="program3Output"></p>
+            <input type="text" class="form-control" id="program3InputPro" placeholder="Enter Object Properties"><br>
+            <input type="text" class="form-control" id="program3InputVal" placeholder="Enter Object Values"><br>
+            <button class="btn btn-primary" onclick="getLenght()">Get Length</button>
+        </div>
+        <div class="col-lg-6">
+            <h3>Write a JavaScript program to display the reading status (i.e. display book name, author name and reading status) of the following books.</h3>
+            <p class="text-success font-weight-bold" id="program4Output"></p>
+            <button class="btn btn-primary" onclick="displayStatus()">Display</button>
+        </div>
+    </div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3> Write a JavaScript program to get the volume of a Cylinder with four decimal places using object classes</h3>
+        <p class="text-success font-weight-bold" id="program5Output"></p>
+        <input type="text" class="form-control" id="program5InputH" placeholder="Enter Cylinder Height"><br>
+        <input type="text" class="form-control" id="program5InputR" placeholder="Enter Cylinder Radius"><br>
+        <button class="btn btn-primary" onclick="calCylinderVolume()">Calculate</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Bubble Sort algorithm</h3>
+        <p class="text-success font-weight-bold" id="program6Output"></p>
+        <input type="text" class="form-control" id="program6Input" placeholder="Enter Array of Numbers"><br>
+        <button class="btn btn-primary" onclick="bubbleSort()">Sort</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Program which returns a subset of a string</h3>
+        <p class="text-success font-weight-bold" id="program7Output"></p>
+        <input type="text" class="form-control" id="program7Input" placeholder="Enter String"><br>
+        <button class="btn btn-primary" onclick="findSubset()">Subset</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Create a Clock</h3>
+        <p class="text-success font-weight-bold" id="program8Output"></p>
+        <button class="btn btn-primary" onclick="createClock()">Create Clock</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Calculate the area and perimeter of a circle</h3>
+        <p class="text-success font-weight-bold" id="program9Output"></p>
+        <input type="number" class="form-control" id="program9Input" placeholder="Enter Radius"><br>
+        <button class="btn btn-primary" onclick="calculateAreaPerimeter()">Calculate</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Sort an array of JavaScript objects</h3>
+        <p class="text-success font-weight-bold" id="program10Output"></p>
+        <button class="btn btn-primary" onclick="sortObjectArray()">Sort</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Print all the methods in an JavaScript object</h3>
+        <p class="text-success font-weight-bold" id="program11Output"></p>
+        <button class="btn btn-primary" onclick="printMethhods()">Print</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Parse an URL</h3>
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+<script src="./script.js"></script>    
+</body>
+</html>
