@@ -90,9 +90,388 @@
     </div>
     <div class="col-lg-6">
         <h3>Parse an URL</h3>
-        
+        <p class="text-success font-weight-bold" id="program12Output"></p>
+        <input type="url" class="form-control" id="program12Input" placeholder="Paste URL"><br>
+        <button class="btn btn-primary" onclick="parseURL()">Parse</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Retrieve all the names of object's own and inherited properties</h3>
+        <p class="text-success font-weight-bold" id="program13Output"></p>
+        <button class="btn btn-primary" onclick="retrieveNames()">Retrieve</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Retrieve all the values of an object's properties</h3>
+        <p class="text-success font-weight-bold" id="program14Output"></p>
+        <button class="btn btn-primary" onclick="retrieveValues()">Retrieve</button>
+    </div>
+</div><br>
+
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Convert an object into a list of `[key, value]` pairs</h3>
+        <button class="btn btn-primary" onclick="keyPairs()">Convert</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Get a copy of the object where the keys have become the values and the values the keys</h3>
+        <p class="text-success font-weight-bold" id="program16Output"></p>
+        <button class="btn btn-primary" onclick="getCopy()">Get</button>
     </div>
 </div>
+<div class="row">
+    <div class="col-lg-12">
+        <h3>Check whether an object contains given property</h3>
+        <p class="text-success font-weight-bold" id="program17Output"></p>
+        <button class="btn btn-primary" onclick="check()">Check</button>
+    </div>
+</div><br>
+<h1 class="text-center text-success">Date Handling!</h1>
+<br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Check whether an `input` is a date object or not</h3>
+        <p class="text-success font-weight-bold" id="program18Output"></p>
+        <button class="btn btn-primary" onclick="checkDatObj()">Check</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Get the current date Pass a separator as an argument</h3>
+        <p class="text-success font-weight-bold" id="program19Output"></p>
+        <button class="btn btn-primary" onclick="passSeparator()">Get</button>
+</div>
+</div><br>
+
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Get the number of days in a month</h3>
+        <p class="text-success font-weight-bold" id="program20Output"></p>
+        <input type="number" class="form-control" id="getMonth" placeholder="Enter Month in Number">
+        <br><input type="number" class="form-control" id="getYear" placeholder="Enter Year">
+        <br><button class="btn btn-primary" onclick="getDays()">Get Days</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Get the month name from a particular date</h3>
+        <p class="text-success font-weight-bold" id="program21Output"></p>
+        <input type="number" class="form-control" id="getMonthInNumb" placeholder="Enter Month in Number"><br>
+        <br><button class="btn btn-primary" onclick="getMont()">Get Month</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Compare dates</h3>
+        <p class="text-success font-weight-bold" id="program22Output"></p>
+        <button class="btn btn-primary" onclick="compareDate()">Compare</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Add specified minutes to a Date object</h3>
+        <p class="text-success font-weight-bold" id="program23Output"></p>
+        <br><button class="btn btn-primary" onclick="addMin()">Add Minutes</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Test whether a date is a weekend</h3>
+        <p class="text-success font-weight-bold" id="program24Output"></p>
+        <button class="btn btn-primary" onclick="testweekend()">Test</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Get difference between two dates in days</h3>
+        <p class="text-success font-weight-bold" id="program25Output"></p>
+        <input type="text" class="form-control" id="firstDate" placeholder="Enter First Date in Format(mm/dd/yy)"><br>
+        <input type="text" class="form-control" id="secondDate" placeholder="Enter Second Date in Format(mm/dd/yy)"><br>
+        <button class="btn btn-primary" onclick="getDiff()">Get</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Get the last day of a month</h3>
+        <p class="text-success font-weight-bold" id="program26Output"></p>
+        <input type="number" class="form-control" id="getYear1" placeholder="Enter Year"><br>
+        <input type="number" class="form-control" id="getMont1" placeholder="Enter Month"><br>
+        <button class="btn btn-primary" onclick="getlastDay()">Get</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Calculate 'yesterday day'</h3>
+        <p class="text-success font-weight-bold" id="program27Output"></p>
+        <button class="btn btn-primary" onclick="calculateYesterday()">Calculate</button>
+    </div>
+</div><br>
+
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Get the maximum date from an array of dates</h3>
+        <p class="text-success font-weight-bold" id="program28Output"></p>
+        <button class="btn btn-primary" onclick="getMaxDat()">Get</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Get the minimum date from an array of dates</h3>
+        <p class="text-success font-weight-bold" id="program29Output"></p>
+        <button class="btn btn-primary" onclick="getMinDat()">Get</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Return the number of minutes in hours and minutes</h3>
+        <p class="text-success font-weight-bold" id="program30Output"></p>
+        <input type="number" class="form-control" id="getMinutes" placeholder="Enter Minutes"><br>
+        <button class="btn btn-primary" onclick="returnMintsToHoursAndMints()">Return Hours</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Get the amount of days of a year</h3>
+        <p class="text-success font-weight-bold" id="program31Output"></p>
+        <input type="number" class="form-control" id="getYearForDays" placeholder="Enter Year"><br>
+        <button class="btn btn-primary" onclick="returDaysOfYear()">Return Days</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Count the number of days passed since beginning of the year</h3>
+        <p class="text-success font-weight-bold" id="program32Output"></p>
+        <button class="btn btn-primary" onclick="returNumberOfDays()">Return Days</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Get the quarter (1 to 4) of the year</h3>
+        <p class="text-success font-weight-bold" id="program33Output"></p>
+        <input type="text" class="form-control" id="getDate" placeholder="Enter Date in Format(mm/dd/yy)"><br>
+        <button class="btn btn-primary" onclick="getQuarter()">Get quarter</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Convert a Unix timestamp to time</h3>
+        <p class="text-success font-weight-bold" id="program34Output"></p>
+        <button class="btn btn-primary" onclick="convert()">Convert</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Calculate age</h3>
+        <p class="text-success font-weight-bold" id="program35Output"></p>
+        <input type="text" class="form-control" id="getDateOfBirth" placeholder="Enter Your Date of Birth in Format(mm/dd/yy)"><br>
+        <button class="btn btn-primary" onclick="calculateAge()">Calculate</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Get the day of the month, 2 digits with leading zeros </h3>
+        <p class="text-success font-weight-bold" id="program36Output"></p>
+        <button class="btn btn-primary" onclick="getDay()">Get Day</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Get a textual representation of a day</h3>
+        <p class="text-success font-weight-bold" id="program37Output"></p>
+        <button class="btn btn-primary" onclick="getDayInText()">Get Day</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Get a full textual representation of the day of the week</h3>
+        <p class="text-success font-weight-bold" id="program38Output"></p>
+        <button class="btn btn-primary" onclick="getDayInFullText()">Get Day</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Get ISO-8601 numeric representation of the day of the week</h3>
+        <p class="text-success font-weight-bold" id="program39Output"></p>
+        <button class="btn btn-primary" onclick="getDayInNumeric()">Get Day</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Get English ordinal suffix for the day of the month, 2 characters (st, nd, rd or th.)</h3>
+        <p class="text-success font-weight-bold" id="program40Output"></p>
+        <button class="btn btn-primary" onclick="getDayInEnglish()">Get Day</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Week number of year</h3>
+        <p class="text-success font-weight-bold" id="program41Output"></p>
+        <button class="btn btn-primary" onclick="getWeekNumber()">Get Week</button>
+    </div>
+</div><br>
+
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Get a full textual representation of a month</h3>
+        <p class="text-success font-weight-bold" id="program42Output"></p>
+        <button class="btn btn-primary" onclick="getMonthName()">Get Month</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Get a numeric representation of a month</h3>
+        <p class="text-success font-weight-bold" id="program43Output"></p>
+        <button class="btn btn-primary" onclick="getMonthInNumeric()">Get Month</button>
+    </div>
+</div><br>
+
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Get a short textual representation of a month</h3>
+        <p class="text-success font-weight-bold" id="program44Output"></p>
+        <button class="btn btn-primary" onclick="getMonthInShortWord()">Get Month</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Get a full numeric representation of a year</h3>
+        <p class="text-success font-weight-bold" id="program45Output"></p>
+        <button class="btn btn-primary" onclick="getYear()">Get Year</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Get a two digit representation of a year</h3>
+        <p class="text-success font-weight-bold" id="program46Output"></p>
+        <button class="btn btn-primary" onclick="getShortFormYear()">Get Year</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Get lowercase Ante meridiem and Post meridiem</h3>
+        <p class="text-success font-weight-bold" id="program47Output"></p>
+        <button class="btn btn-primary" onclick="getAnteMeridiem()">Get</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Swatch Internet time (000 through 999)</h3>
+        <p class="text-success font-weight-bold" id="program48Output"></p>
+        <button class="btn btn-primary" onclick="swatchInternetTime()">Swatch</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Write a JavaScript function to get 12-hour format of an hour with leading zeros</h3>
+        <p class="text-success font-weight-bold" id="program49Output"></p>
+        <button class="btn btn-primary" onclick="formatHour()">Format</button>
+    </div>
+</div><br>
+
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Get 24-hour format of an hour without leading zeros</h3>
+        <p class="text-success font-weight-bold" id="program50Output"></p>
+        <button class="btn btn-primary" onclick="format24Hour()">Format</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Get minutes with leading zeros (00 to 59)</h3>
+        <p class="text-success font-weight-bold" id="program51Output"></p>
+        <button class="btn btn-primary" onclick="getMinutes()">Get Minutes</button>
+    </div>
+</div><br>
+
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Get lowercase Ante meridiem and Post meridiem</h3>
+        <p class="text-success font-weight-bold" id="program52Output"></p>
+        <button class="btn btn-primary" onclick="getUppercaseAnteMeridiem()">Get</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Get seconds with leading zeros (00 through 59)</h3>
+        <p class="text-success font-weight-bold" id="program53Output"></p>
+        <button class="btn btn-primary" onclick="getSeconds()">Get</button>
+    </div>
+</div><br>
+
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Get Timezone</h3>
+        <p class="text-success font-weight-bold" id="program54Output"></p>
+        <button class="btn btn-primary" onclick="getTimeZone()">Get</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Find whether or not the date is in daylights savings time</h3>
+        <p class="text-success font-weight-bold" id="program55Output"></p>
+        <button class="btn btn-primary" onclick="find()">Find</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Get difference to Greenwich time (GMT) in hours</h3>
+        <p class="text-success font-weight-bold" id="program56Output"></p>
+        <button class="btn btn-primary" onclick="getGreenwichTime()">Get</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Get timezone offset in seconds</h3>
+        <p class="text-success font-weight-bold" id="program57Output"></p>
+        <button class="btn btn-primary" onclick="getGreenwichTimeInSeconds()">Get</button>
+    </div>
+</div><br>
+
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Add specified years to a date</h3>
+        <p class="text-success font-weight-bold" id="program58Output"></p>
+        <button class="btn btn-primary" onclick="addYears()">Add</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Add specified weeks to a date</h3>
+        <p class="text-success font-weight-bold" id="program59Output"></p>
+        <input type="number" class="form-control" placeholder="Enter Number of Weeks" id="getNumberOfWeeks"><br>
+        <button class="btn btn-primary" onclick="addWeeks()">Add</button>
+    </div>
+</div><br>
+
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Add specified months to a date</h3>
+        <p class="text-success font-weight-bold" id="program60Output"></p>
+        <input type="number" class="form-control" placeholder="Enter Number of Months" id="getNumberOfMonths"><br>
+        <button class="btn btn-primary" onclick="addMonths()">Add</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Get time differences in minutes between two dates</h3>
+        <p class="text-success font-weight-bold" id="program61Output"></p>
+        <button class="btn btn-primary" onclick="getDiffInMint()">Get</button>
+    </div>
+</div><br>
+
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Get time differences in hours between two dates</h3>
+        <p class="text-success font-weight-bold" id="program62Output"></p>
+        <button class="btn btn-primary" onclick="getDiffInHours()">Get</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Get time differences in days between two dates</h3>
+        <p class="text-success font-weight-bold" id="program63Output"></p>
+        <button class="btn btn-primary" onclick="getDiffInDays()">Get</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Get time differences in weeks between two dates</h3>
+        <p class="text-success font-weight-bold" id="program64Output"></p>
+        <button class="btn btn-primary" onclick="getDiffInWeeks()">Get</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Get time differences in months between two dates</h3>
+        <p class="text-success font-weight-bold" id="program65Output"></p>
+        <button class="btn btn-primary" onclick="getDiffInMonths()">Get</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Get time differences in years between two dates</h3>
+        <p class="text-success font-weight-bold" id="program66Output"></p>
+        <button class="btn btn-primary" onclick="getDiffInYears()">Get</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Get the week start date</h3>
+        <p class="text-success font-weight-bold" id="program67Output"></p>
+        <button class="btn btn-primary" onclick="getWeekStartDate()">Get</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Get the week end date</h3>
+        <p class="text-success font-weight-bold" id="program68Output"></p>
+        <button class="btn btn-primary" onclick="getWeekEndDate()">Get</button>
+    </div>
+    <div class="col-lg-6">
+        <h3>Get the month start date</h3>
+        <p class="text-success font-weight-bold" id="program69Output"></p>
+        <button class="btn btn-primary" onclick="getMonthStartDate()">Get</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-lg-12">
+        <h3>Get the month end date</h3>
+        <p class="text-success font-weight-bold" id="program70Output"></p>
+        <button class="btn btn-primary" onclick="getMonthEndDate()">Get</button>
+    </div>
+</div>
+
+
 
 
 
